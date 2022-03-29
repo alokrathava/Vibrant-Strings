@@ -71,7 +71,7 @@ class CourseActivity : AppCompatActivity() {
         }
 
         binding.classical.setOnClickListener {
-            displayConfirmationDialog("Classical")
+            displayConfirmationDialog("Indian Classical")
         }
 
         binding.harmonium.setOnClickListener {

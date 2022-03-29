@@ -85,13 +85,13 @@ class UserProfileActivity : AppCompatActivity() {
 
 
         binding.edtReferral.editText!!.setOnClickListener {
-            val message = "My Referral Code is $referralCode"
+            val message = "My Referral Code is $referralCode \n \n - " + getString(R.string.app_name)
 
             Intent().also {
+                it.type = "text/plain"
                 it.action = Intent.ACTION_SEND
                 it.putExtra(Intent.EXTRA_TEXT, message)
                 it.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name))
-                it.type = "plane/text"
 
                 startActivity(Intent.createChooser(it, "Send to: "))
             }

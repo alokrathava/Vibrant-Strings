@@ -239,7 +239,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="100sp"
+                        android:layout_height="104dp"
                         android:layout_marginTop="5sp"
                         android:scaleType="fitXY"
                         android:src="@drawable/indiaclassical" />
@@ -250,7 +250,7 @@
                         android:fontFamily="sans-serif-medium"
                         android:paddingTop="12sp"
                         android:paddingBottom="5sp"
-                        android:text="ind.classical"
+                        android:text="Indian Classical"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
                 </LinearLayout>

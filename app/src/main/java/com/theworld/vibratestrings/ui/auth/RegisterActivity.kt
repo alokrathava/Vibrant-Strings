@@ -90,6 +90,8 @@ class RegisterActivity : AppCompatActivity() {
                 toast("Please confirm password!")
             }
 
+            binding.btnRegister.isEnabled = false
+
             doRegister(name, email, password);
         }
 
@@ -109,6 +111,8 @@ class RegisterActivity : AppCompatActivity() {
                 } else {
                     Log.d(TAG, "ERROR:" + task.exception!!.message)
                     toast("ERROR:" + task.exception!!.message)
+                    binding.btnRegister.isEnabled = true
+
                 }
             }.addOnFailureListener(context) { e: Exception ->
                 Log.d(TAG, "ERROR:" + e.message)
@@ -131,10 +135,12 @@ class RegisterActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "getNewUserSnapShot: success")
                     toast("Register Successful")
+                    binding.btnRegister.isEnabled = true
                     moveToDashboard()
                 } else {
                     Log.d(TAG, "getNewUserSnapShot: failed")
                     toast("Error:" + task.exception!!.message)
+                    binding.btnRegister.isEnabled = true
                 }
             }
     }

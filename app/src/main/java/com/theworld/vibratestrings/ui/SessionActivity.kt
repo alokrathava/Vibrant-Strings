@@ -1,26 +1,31 @@
-package com.theworld.vibratestrings.ui;
+package com.theworld.vibratestrings.ui
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.theworld.vibratestrings.R
+import android.content.Intent
+import android.net.Uri
+import android.view.View
+import coil.load
+import com.theworld.vibratestrings.databinding.ActivityChatBinding
+import com.theworld.vibratestrings.databinding.ActivitySessionBinding
 
-import androidx.appcompat.app.AppCompatActivity;
+class SessionActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySessionBinding
 
-import com.theworld.vibratestrings.R;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-public class SessionActivity extends AppCompatActivity {
+        binding = ActivitySessionBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_session);
+        binding.imageView13.load(R.drawable.online)
+
     }
 
-    public void click(View view) {
-        String url = "https://us05web.zoom.us/j/7613372199?pwd=YTZLQk95dS9KeWVHYzFiZ2RGcTE2UT09";
-        Intent link = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(link);
+    fun click(view: View?) {
+        val url = "https://us05web.zoom.us/j/7613372199?pwd=YTZLQk95dS9KeWVHYzFiZ2RGcTE2UT09"
+        val link = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(link)
     }
-
 }

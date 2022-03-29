@@ -1,27 +1,32 @@
-package com.theworld.vibratestrings.ui;
+package com.theworld.vibratestrings.ui
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.theworld.vibratestrings.R
+import android.content.Intent
+import android.net.Uri
+import android.view.View
+import coil.load
+import com.theworld.vibratestrings.databinding.ActivityChatBinding
+import com.theworld.vibratestrings.databinding.ActivityDashboardBinding
 
-import androidx.appcompat.app.AppCompatActivity;
+class ChatActivity : AppCompatActivity() {
 
-import com.theworld.vibratestrings.R;
+    private lateinit var binding: ActivityChatBinding
 
-public class ChatActivity extends AppCompatActivity {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        binding = ActivityChatBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.imageView14.load(R.drawable.chatroom)
+
     }
 
-
-    public void click(View view) {
-        String url = "https://chat.whatsapp.com/GsLd9XUEdHFEa5E577LevA";
-        Intent link = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(link);
+    fun click(view: View?) {
+        val url = "https://chat.whatsapp.com/GsLd9XUEdHFEa5E577LevA"
+        val link = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(link)
     }
 }
