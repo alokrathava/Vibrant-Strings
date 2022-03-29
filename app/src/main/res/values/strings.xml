@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Vibrant Strings</string>
+    <!-- Checkout activity -->
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="checkout_item_description">Description</string>
+
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+
+    <string name="confirmation_dialog_title">Do you really want to continue with the %1$s Course?, 30 days free trail will be added!</string>
+    <string name="teacher_profile">Teacher Profile</string>
+    <string name="profile">Profile</string>
+    <string name="notes">Notes</string>
+    <string name="chat_box">Chat Box</string>
+    <string name="online_session">Online Session</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:focusable="true"
+    app:cardElevation="5dp"
+    app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/teacher_at_the_blackboard" />
+
+        <TextView
+            android:padding="6dp"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/img"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="Crazy Me"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+

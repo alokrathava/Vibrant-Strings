@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "753172814882",
+    "project_id": "vibrate-strings",
+    "storage_bucket": "vibrate-strings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753172814882:android:0354803eaec92bdbdb7e7b",
+        "android_client_info": {
+          "package_name": "com.theworld.vibratestrings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753172814882-tbljersac81o15meer4mshpuet4qnh5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theworld.vibratestrings",
+            "certificate_hash": "c708b4743a113c4b27a5838c76aca9758285c7e3"
+          }
+        },
+        {
+          "client_id": "753172814882-s7tm706ebbr3ag9vk1fcopi6if0klmpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_yKe7knnEsVu2lfsVd_wlPvUvsZ0mxHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753172814882-s7tm706ebbr3ag9vk1fcopi6if0klmpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
