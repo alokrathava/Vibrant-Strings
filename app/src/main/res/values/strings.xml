@@ -11,9 +11,10 @@
 
 
     <string name="confirmation_dialog_title">Do you really want to continue with the %1$s Course?, 30 days free trail will be added!</string>
-    <string name="teacher_profile">Teacher Profile</string>
+    <string name="teacher_profile">Teachers</string>
     <string name="profile">Profile</string>
     <string name="notes">Notes</string>
     <string name="chat_box">Chat Box</string>
     <string name="online_session">Online Session</string>
+    <string name="youtube_api_key">AIzaSyCHAqScqHMu5bDfvlBmGCjy7SGYeSOZxyc</string>
 </resources>

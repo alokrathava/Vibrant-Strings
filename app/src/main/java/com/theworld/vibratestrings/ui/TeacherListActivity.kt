@@ -6,28 +6,29 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.theworld.vibratestrings.data.Teacher
+import com.theworld.vibratestrings.databinding.ActivityTeacherListBinding
 import com.theworld.vibratestrings.databinding.ActivityTeacherProfileBinding
 import com.theworld.vibratestrings.ui.adapters.TeacherAdapter
 import com.theworld.vibratestrings.ui.auth.LoginActivity
 import com.theworld.vibratestrings.utils.startNewActivity
 
-class TeacherProfileActivity : AppCompatActivity() {
+class TeacherListActivity : AppCompatActivity() {
 
     companion object {
-        private const val TAG = "TeacherProfileActivity"
+        private const val TAG = "TeacherListActivity"
     }
 
     private val context = this
     private lateinit var mAuth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
-    private lateinit var binding: ActivityTeacherProfileBinding
+    private lateinit var binding: ActivityTeacherListBinding
 
     private val teacherAdapter = TeacherAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityTeacherProfileBinding.inflate(layoutInflater)
+        binding = ActivityTeacherListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         init()
@@ -56,7 +57,7 @@ class TeacherProfileActivity : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()
 
-        binding.includedToolbar.toolbarTitle.text = "Teacher Profile"
+        binding.includedToolbar.toolbarTitle.text = "Teachers"
 
         binding.apply {
             recyclerView.adapter = teacherAdapter

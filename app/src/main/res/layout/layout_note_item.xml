@@ -13,7 +13,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="15dp">
 
         <TextView
             android:id="@+id/title"
@@ -25,7 +25,7 @@
             android:paddingHorizontal="8dp"
             android:paddingVertical="2dp"
             android:text="Crazy Me"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
 
     </RelativeLayout>

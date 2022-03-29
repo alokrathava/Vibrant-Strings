@@ -57,7 +57,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ui.TeacherProfileActivity"
+            android:name=".ui.TeacherListActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
@@ -77,6 +77,11 @@
             android:name=".ui.NoteActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.PlayerActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
 
 
     </application>

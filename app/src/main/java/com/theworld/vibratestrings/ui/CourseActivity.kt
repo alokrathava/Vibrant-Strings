@@ -10,6 +10,7 @@ import com.theworld.vibratestrings.R
 import com.theworld.vibratestrings.databinding.ActivitySelectCourseBinding
 import com.theworld.vibratestrings.ui.auth.LoginActivity
 import com.theworld.vibratestrings.utils.confirmDialog
+import com.theworld.vibratestrings.utils.openActivity
 import com.theworld.vibratestrings.utils.startNewActivity
 import com.theworld.vibratestrings.utils.toast
 import java.util.*
@@ -69,23 +70,47 @@ class CourseActivity : AppCompatActivity() {
         binding.guitar.setOnClickListener {
             displayConfirmationDialog("Guitar")
         }
+        binding.guitar.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
 
+        binding.classical.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
         binding.classical.setOnClickListener {
             displayConfirmationDialog("Indian Classical")
         }
 
+        binding.harmonium.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
         binding.harmonium.setOnClickListener {
             displayConfirmationDialog("Harmonium")
         }
 
+        binding.keyboard.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
         binding.keyboard.setOnClickListener {
             displayConfirmationDialog("Keyboard")
         }
 
+        binding.production.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
         binding.production.setOnClickListener {
             displayConfirmationDialog("Production")
         }
 
+        binding.recording.setOnLongClickListener {
+            openActivity(PlayerActivity::class.java)
+            true
+        }
         binding.recording.setOnClickListener {
             displayConfirmationDialog("Recording")
         }

@@ -1,7 +1,6 @@
 package com.theworld.vibratestrings.ui
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.auth.FirebaseAuth
@@ -10,7 +9,6 @@ import com.theworld.vibratestrings.databinding.ActivityDashboardBinding
 import com.theworld.vibratestrings.ui.auth.LoginActivity
 import com.theworld.vibratestrings.utils.openActivity
 import com.theworld.vibratestrings.utils.startNewActivity
-import com.theworld.vibratestrings.utils.toast
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -69,7 +67,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         binding.teacherProfile.setOnClickListener {
-            openActivity(TeacherProfileActivity::class.java)
+            openActivity(TeacherListActivity::class.java)
         }
 
         binding.chatBox.setOnClickListener {
